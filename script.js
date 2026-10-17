@@ -78,7 +78,40 @@ console.log(quantity);      //4
 
 //====comparison(always gives true or false)
 
-console.log(5>3);
+console.log(5>3);     //true
+console.log(5>=3);    //true
+console.log(5===5);    //true(equal value AND type)
+console.log(5==="5");     //false(number vs string)
+console.log(5=="5");      //true(bad so avoid it)      
+console.log(5!==3)        //true
+
+//====logical=====
+
+const isLoggedIn=true;
+const hasItemsInCart=false;
+
+console.log(isLoggedIn && hasItemsInCart);   //false(AND:both must be true)
+console.log(isLoggedIn || hasItemsInCart);     //true(OR:atleast one true)
+console.log(!isLoggedIn);                      //false(NOT:reverses)
+
+//====Type Conversion====
+//Everything typed in input is string so we have to convert the type
+
+console.log("5"+3);    //53 string joining-not math
+console.log(5+3);       //8
+console.log(Number("abc"));    //NaN-not a number
+console.log(parseInt("42px"));   //42
+console.log(parseFloat("4.5 stars"))    //4.5
+console.log(String(100));         //"100"
+
+//=====Getting Inupt===Showing output====
+
+const userName=prompt("what is your name?");   //popup input box
+alert(`Hello,${userName},welcome to our store!`);    //popup msg
+
+//===conditions and loops
+
+
 
 
 
