@@ -78,3 +78,58 @@ console.log(Boolean(undefined));     //false
 console.log(Boolean("0"));          //true(non empty string)
 console.log(Boolean([]));           //true(empty array is truthy)
 
+
+
+//--------switch case------
+
+const category="shoes";
+
+switch (category){
+    case "shirts":
+        console.log("Showing shirts");
+        break;
+    case "shoes":
+        console.log("showing shoes");
+        break;
+    case "watches":
+        console.log("showing watches");
+        break;
+    default:
+        console.log("showing all products");
+}
+
+//-------another example for switch case----
+
+const orderStatus="shipped";
+
+switch (orderStatus){
+    case "placed":
+        console.log("Your order is placed");
+        break;
+    case "shipped":
+        console.log("Your order is on the way");
+        break;
+    case "delivered":
+        console.log("Your order is delivered")
+        break;
+    case "cancelled":
+        console.log("Your order is cancelled");
+        break;
+    default:
+        console.log("unknown status");
+}
+
+//---------for loop-----
+
+for (let i=1;i<=5;i++){
+    console.log("round "+i);
+}
+
+for (let i=5;i>=1;i--){
+    console.log("reverse round "+i)
+}
+
+for (i=2;i<=10;i+=2){
+    console.log("Even "+i)
+}
+
