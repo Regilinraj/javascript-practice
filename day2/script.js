@@ -34,3 +34,47 @@ if (rating>4.5){
     console.log("below average");
 }
 
+//---combining conditions-----
+
+console.log("--------3.&& || !-------");
+
+const isLoggedIn=true;
+const hasCoupon=false;
+const age=25;
+
+if (isLoggedIn && cartTotal>500){
+    console.log("You can place the order");
+}
+
+if (hasCoupon || cartTotal>1000){
+    console.log("You get a discount");
+}
+
+if (!isLoggedIn){
+    console.log("Please login first");
+}
+
+if (age>=18 && age<=60){
+    console.log("Age is in the allowed range");
+}
+
+//--------4.TRUTHY AND FALSY Values-----
+
+console.log("-------4.Truth/false------")
+
+const userName="";
+
+if (userName){
+    console.log("Hello"+userName);
+}else{
+    "Please enter your name,name is empty";
+}
+
+console.log(Boolean(0));     //false
+console.log(Boolean(""));    //false
+console.log(Boolean(null));     //false
+console.log(Boolean(NaN));      //false
+console.log(Boolean(undefined));     //false
+console.log(Boolean("0"));          //true(non empty string)
+console.log(Boolean([]));           //true(empty array is truthy)
+
